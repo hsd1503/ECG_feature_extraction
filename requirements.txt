@@ -1,6 +1,8 @@
+biosppy
 numpy==1.21.2
 scipy==1.7.1
 neurokit2==0.1.4.1
 wfdb==3.4.1
 pyhrv==0.4.0
 seaborn
+dtw==1.4.0

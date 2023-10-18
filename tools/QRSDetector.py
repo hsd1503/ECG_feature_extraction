@@ -6,7 +6,7 @@ import scipy.signal as sps
 from tools.ResampleTools import resample_interp
 
 
-def detect_qrs(sig: list, fs: int, url: str) -> list: # 可公开，目前有外网可访问的url，“http://183.162.233.24:10081/qrs/detect/v5”
+def detect_qrs(sig: list, fs: int, url: str) -> list:
     """
     detect qrs complex index using (HTTP) API
 
@@ -74,11 +74,12 @@ def simple_qrs_detector(ecg, fs):
     whole_fixed_fs_filtered = sps.filtfilt(b, a, whole_fixed_fs_ecg)
     # ecg r peaks
     _, info = nk.ecg_peaks(whole_fixed_fs_filtered, fixed_fs,
-                           smoothwindow=0.2,
-                           avgwindow=0.9,
-                           gradthreshweight=1.2,
-                           minlenweight=0.3,
-                           mindelay=0.2)
+                        #    smoothwindow=0.2,
+                        #    avgwindow=0.9,
+                        #    gradthreshweight=1.2,
+                        #    minlenweight=0.3,
+                        #    mindelay=0.2
+                           )
     whole_fixed_fs_r_peaks = info['ECG_R_Peaks']
     if len(whole_fixed_fs_r_peaks) < 1:
         return whole_fixed_fs_r_peaks
