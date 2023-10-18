@@ -1,18 +1,21 @@
 # ECG_feature_extraction
 
+You can start with [example.ipynb](example.ipynb). 
+
+
 Please find the detailed usage description in the following files: 
 
-[ECGAvgBeat](features/ECGAvgBeat/01_ECGAvgBeat.md)
+[ECGAvgBeat](tutorials/ECGAvgBeat.md)
 
-[FrequencyDomain](features/ECGFrequencyDomain/01_FrequencyDomain.md)
+[FrequencyDomain](tutorials/FrequencyDomain.md)
 
-[HeartRateVariability](features/HeartRateVariability/01_HeartRateVariability.md)
+[HeartRateVariability](tutorials/HeartRateVariability.md)
 
-[MorphologicVariability](features/MorphologicVariability/01_MorphologicVariability.md)
+[MorphologicVariability](tutorials/MorphologicVariability.md)
 
-[QRSAxis](features/QRSAxis/01_QRSAxis.md)
+[QRSAxis](tutorials/QRSAxis.md)
 
-[QTDispersion](features/QTDispersion/01_QTDispersion.md)
+[QTDispersion](tutorials/QTDispersion.md)
 
 If you find the idea useful or use this code in your own work, please cite our paper as
 ```
